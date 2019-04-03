@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="icones/fontawesome/css/all.css" rel="stylesheet">
+    <link href="icones/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="icones/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/conteudos.css">
+    <script src="js/imagem_falsa.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/clique.js"></script>
+    <title>Matemédio - Seu site de matemática</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="imagemFalsa"></div>
+    </header>
+
+    <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conteudos.html">Conteúdo</a></li>
+            <li><a href="">Diversos</a>
+                <ul class="lista-sec">
+                    <li><a href="filmoteca-page1.html">Filmoteca</a></li>
+                    <li><a href="livrarada.html">Livrarada</a></li>
+                    <li><a href="artigos.html">Artigos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <article id="secao1">
+        <h1 class="series">1° Ano</h1>
+        <button class="btn">Clique</button>
+        <section class="conteudo" hidden>
+
+            <div class="zebra">
+                <h3>Conjuntos<i class="fas fa-calculator"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao')">Conjuntos Numéricos</a>
+
+                    <div class="fundo" id="fundao">
+                        <i class="fas fa-times" onclick="fecha('fundao')"></i>
+                        <iframe src="apostilas/conjuntos/conjunto-conjuntos.pdf" class="tela"></iframe>
+
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao2')">Intervalos</a>
+
+                    <div class="fundo" id="fundao2">
+                        <i class="fas fa-times" onclick="fecha('fundao2')"></i>
+                        <iframe src="apostilas/conjuntos/conjunto-intervalo.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao3')">Coordenadas cartesianas</a>
+
+                    <div class="fundo" id="fundao3">
+                        <i class="fas fa-times" onclick="fecha('fundao3')"></i>
+                        <iframe src="apostilas/conjuntos/conjunto-cartesiano.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Funções<i class="fas fa-divide"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao4')">Definição de função</a>
+
+                    <div class="fundo" id="fundao4">
+                        <i class="fas fa-times" onclick="fecha('fundao4')"></i>
+                        <iframe src="apostilas/funcao/f-funcao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao5')">Tipos de funções</a>
+
+                    <div class="fundo" id="fundao5">
+                        <i class="fas fa-times" onclick="fecha('fundao5')"></i>
+                        <iframe src="apostilas/funcao/f-tipos.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao6')">Crescimento e decrescimento de funções</a>
+
+                    <div class="fundo" id="fundao6">
+                        <i class="fas fa-times" onclick="fecha('fundao6')"></i>
+                        <iframe src="apostilas/funcao/f-crescente.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao7')">Gráficos de funções</a>
+
+                    <div class="fundo" id="fundao7">
+                        <i class="fas fa-times" onclick="fecha('fundao7')"></i>
+                        <iframe src="apostilas/funcao/f-graficos.pdf" class="tela"></iframe>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Função Afim<i class="fas fa-equals"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao8')">Definição e gráficos de função afim</a>
+
+                    <div class="fundo" id="fundao8">
+                        <i class="fas fa-times" onclick="fecha('fundao8')"></i>
+                        <iframe src="apostilas/funcao-afim/funcaoa-afim.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao9')">Zero da função afim</a>
+
+                    <div class="fundo" id="fundao9">
+                        <i class="fas fa-times" onclick="fecha('fundao9')"></i>
+                        <iframe src="apostilas/funcao-afim/funcaoa-zero.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao10')">Análise do gráfico da função afim</a>
+
+                    <div class="fundo" id="fundao10">
+                        <i class="fas fa-times" onclick="fecha('fundao10')"></i>
+                        <iframe src="apostilas/funcao-afim/funcaoa-analise.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Função Quadrática<i class="fas fa-superscript"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao11')">Definição e gráficos de função quadrática</a>
+
+                    <div class="fundo" id="fundao11">
+                        <i class="fas fa-times" onclick="fecha('fundao11')"></i>
+                        <iframe src="apostilas/funcao-quadratica/funcaoq-definicao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao12')">Raízes ou zeros da função quadrática</a>
+
+                    <div class="fundo" id="fundao12">
+                        <i class="fas fa-times" onclick="fecha('fundao12')"></i>
+                        <iframe src="apostilas/funcao-quadratica/funcaoq-raiz-zero.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao13')">Estudo da parábola</a>
+
+                    <div class="fundo" id="fundao13">
+                        <i class="fas fa-times" onclick="fecha('fundao13')"></i>
+                        <iframe src="apostilas/funcao-quadratica/funcaoq-parabola.pdf" class="tela"></iframe>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Função Modular<i class="fas fa-greater-than-equal"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao14')">Definição e gráficos de função modular</a>
+
+                    <div class="fundo" id="fundao14">
+                        <i class="fas fa-times" onclick="fecha('fundao14')"></i>
+                        <iframe src="apostilas/funcao-modular/funcaom-definicao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao15')">Equações modulares</a>
+
+                    <div class="fundo" id="fundao15">
+                        <i class="fas fa-times" onclick="fecha('fundao15')"></i>
+                        <iframe src="apostilas/funcao-modular/funcaom-equacao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao16')">Inequações modulares</a>
+
+                    <div class="fundo" id="fundao16">
+                        <i class="fas fa-times" onclick="fecha('fundao16')"></i>
+                        <iframe src="apostilas/funcao-modular/funcaom-inequacao.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Inequações<i class="fas fa-minus"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao17')">Inequações lineares</a>
+
+                    <div class="fundo" id="fundao17">
+                        <i class="fas fa-times" onclick="fecha('fundao17')"></i>
+                        <iframe src="apostilas/inequacao/inequacao-linear.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao18')">Inequações quadráticas</a>
+
+                    <div class="fundo" id="fundao18">
+                        <i class="fas fa-times" onclick="fecha('fundao18')"></i>
+                        <iframe src="apostilas/inequacao/inequacao-quadratica.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Função Exponencial<i class="fas fa-not-equal"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao19')">Definição e gráficos de função exponencial</a>
+
+                    <div class="fundo" id="fundao19">
+                        <i class="fas fa-times" onclick="fecha('fundao19')"></i>
+                        <iframe src="apostilas/funcao-exponencial/funcaoe-definicao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao20')">Equação exponencial</a>
+
+                    <div class="fundo" id="fundao20">
+                        <i class="fas fa-times" onclick="fecha('fundao20')"></i>
+                        <iframe src="apostilas/funcao-exponencial/funcaoe-equacao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao21')">Inequação exponencial</a>
+
+                    <div class="fundo" id="fundao21">
+                        <i class="fas fa-times" onclick="fecha('fundao21')"></i>
+                        <iframe src="apostilas/funcao-exponencial/funcaoe-inequacao.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Função Logarítimica<i class="fas fa-percentage"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao22')">Logaritmo e propriedades</a>
+
+                    <div class="fundo" id="fundao22">
+                        <i class="fas fa-times" onclick="fecha('fundao22')"></i>
+                        <iframe src="apostilas/funcao-logaritmica/funcaol-log.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao23')">Definição e gráficos de função logarítmica</a>
+
+                    <div class="fundo" id="fundao23">
+                        <i class="fas fa-times" onclick="fecha('fundao23')"></i>
+                        <iframe src="apostilas/funcao-logaritmica/funcaol-grafico.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao24')">Equações logarítmicas</a>
+
+                    <div class="fundo" id="fundao24">
+                        <i class="fas fa-times" onclick="fecha('fundao24')"></i>
+                        <iframe src="apostilas/funcao-logaritmica/funcaol-equacao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao25')">Inequações logarítmicas</a>
+
+                    <div class="fundo" id="fundao25">
+                        <i class="fas fa-times" onclick="fecha('fundao25')"></i>
+                        <iframe src="apostilas/funcao-logaritmica/funcaol-inequacao.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Geometria Plana<i class="fas fa-plus"></i></h3>
+                <ul>
+
+                    <a class="item" onclick="mostra('fundao41')">Conceitos Básicos</a>
+
+                    <div class="fundo" id="fundao41">
+                        <i class="fas fa-times" onclick="fecha('fundao41')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-definicao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao26')">Polígonos</a>
+
+                    <div class="fundo" id="fundao26">
+                        <i class="fas fa-times" onclick="fecha('fundao26')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-poligonos.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao27')">Teorema de Tales</a>
+
+                    <div class="fundo" id="fundao27">
+                        <i class="fas fa-times" onclick="fecha('fundao27')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-teorema.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao28')">Bissetrizes, medianas e mediatrizes</a>
+
+                    <div class="fundo" id="fundao28">
+                        <i class="fas fa-times" onclick="fecha('fundao28')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-plana-bmm.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao29')">Semelhança de triângulos</a>
+
+                    <div class="fundo" id="fundao29">
+                        <i class="fas fa-times" onclick="fecha('fundao29')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-plana-semelhanca.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao30')">Relações métricas no triângulo retângulo</a>
+
+                    <div class="fundo" id="fundao30">
+                        <i class="fas fa-times" onclick="fecha('fundao30')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-plana-metricas.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao31')">Circunferência</a>
+
+                    <div class="fundo" id="fundao31">
+                        <i class="fas fa-times" onclick="fecha('fundao31')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-plana-circunferencia.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao32')">Cálculo de áreas</a>
+
+                    <div class="fundo" id="fundao32">
+                        <i class="fas fa-times" onclick="fecha('fundao32')"></i>
+                        <iframe src="apostilas/geometria-plana/geometria-plana-area.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Sequências e progressões<i class="fas fa-square-root-alt"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao33')">Sequências</a>
+
+                    <div class="fundo" id="fundao33">
+                        <i class="fas fa-times" onclick="fecha('fundao33')"></i>
+                        <iframe src="apostilas/progressoes/progressoes-sequencias.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao34')">Progressões Aritméticas (PA)</a>
+
+                    <div class="fundo" id="fundao34">
+                        <i class="fas fa-times" onclick="fecha('fundao34')"></i>
+                        <iframe src="apostilas/progressoes/progressoes-pa.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao35')">Progressões Geométricas (PG)</a>
+
+                    <div class="fundo" id="fundao35">
+                        <i class="fas fa-times" onclick="fecha('fundao35')"></i>
+                        <iframe src="apostilas/progressoes/progressoes-pg.pdf" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>Matemática Financeira<i class="fas fa-times"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao36')">Razão, proporção e porcentagem</a>
+
+                    <div class="fundo" id="fundao36">
+                        <i class="fas fa-times" onclick="fecha('fundao36')"></i>
+                        <iframe src="apostilas/matematica-financeira/financeiro-razao.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao37')">Juros simples</a>
+
+                    <div class="fundo" id="fundao37">
+                        <i class="fas fa-times" onclick="fecha('fundao37')"></i>
+                        <iframe src="apostilas/matematica-financeira/financeiro-juros-simples.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao38')">Juros compostos</a>
+
+                    <div class="fundo" id="fundao38">
+                        <i class="fas fa-times" onclick="fecha('fundao38')"></i>
+                        <iframe src="apostilas/matematica-financeira/financeiro-juros-compostos.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao39')">Descontos</a>
+
+                    <div class="fundo" id="fundao39">
+                        <i class="fas fa-times" onclick="fecha('fundao39')"></i>
+                        <iframe src="apostilas/matematica-financeira/financeiro-descontos.pdf" class="tela"></iframe>
+                    </div>
+
+                    <a class="item desligado" onclick="mostra('fundao40')">Taxas e financiamentos</a>
+
+                    <div class="fundo" id="fundao40">
+                        <i class="fas fa-times" onclick="fecha('fundao40')"></i>
+                        <iframe src="apostilas/matematica-financeira/" class="tela"></iframe>
+                    </div>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- FINAL DA SESSÃO DO PRIMEIRO ANO-->
+    </article>
+
+    <article id="secao2">
+        <h1 class="series">2° Ano</h1>
+        <button class="btn">Clique</button>
+        <section class="conteudo" hidden>
+            <div class="zebra">
+                <h3>Análise Combinatória<i class="fas fa-plus"></i></h3>
+                <ul>
+                    <a href="#" class="item">Princípio fundamental da contagem</a>
+                    <a href="#" class="item">Permutações</a>
+                    <a href="#" class="item">Arranjos</a>
+                    <a href="#" class="item">Combinações</a>
+                    <a href="#" class="item">Números binomiais</a>
+                    <a href="#" class="item">Binômio de Newton</a>
+                    <a href="#" class="item">Triângulo de Pascal</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Probabilidade<i class="fas fa-greater-than-equal"></i></h3>
+                <ul>
+                    <a href="#" class="item">Espaço amostral e evento</a>
+                    <a href="#" class="item">Evento certo, impossível e mutuamente exclusivo</a>
+                    <a href="#" class="item">Cálculo de probabilidades</a>
+                    <a href="#" class="item">Definição teórica de probabilidades e consequências</a>
+                    <a href="#" class="item">Método binomial</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Razões trigonométricas<i class="fas fa-times"></i></h3>
+                <ul>
+                    <a class="item">Seno, cosseno e tangente</a>
+
+                    <a class="item" onclick="mostra('fundao55')">Lei dos senos</a>
+                    <div class="fundo" id="fundao55">
+                        <i class="fas fa-times" onclick="fecha('fundao55')"></i>
+                        <iframe src="apostilas/razao-trigonometrica/funcaot-senos.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao56')">Lei dos cossenos</a>
+
+                    <div class="fundo" id="fundao56">
+                        <i class="fas fa-times" onclick="fecha('fundao56')"></i>
+                        <iframe src="apostilas/razao-trigonometrica/funcaot-cossenos.pdf" class="tela"></iframe>
+
+                    </div>
+
+                    <a class="item" onclick="mostra('fundao57')">Circunferência trigonométrica</a>
+
+                    <div class="fundo" id="fundao57">
+                        <i class="fas fa-times" onclick="fecha('fundao57')"></i>
+                        <iframe src="apostilas/razao-trigonometrica/funcaot-circulo.pdf" class="tela"></iframe>
+
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Relações Trigonométricas<i class="fas fa-superscript"></i></h3>
+                <ul>
+                    <a href="#" class="item">Relações trigonométricas fundamentais</a>
+                    <a href="#" class="item">Identidades trigonométricas</a>
+                    <a href="#" class="item">Equações trigonométricas</a>
+                    <a href="#" class="item">Inequações trigonométricas</a>
+                    <a href="#" class="item">Fórmulas de adição</a>
+                    <a href="#" class="item">Fórmulas do arco duplo e do arco metade</a>
+                    <a href="#" class="item">Fórmulas de transformação em produto</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Funções Trigonométricas<i class="fas fa-minus"></i></h3>
+                <ul>
+                    <a href="#" class="item">Função seno</a>
+                    <a href="#" class="item">Função cosseno</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Geometria Espacial<i class="fas fa-divide"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao67')">Conceitos intuitivos de geometria espacial</a>
+                    <div class="fundo" id="fundao67">
+                        <i class="fas fa-times" onclick="fecha('fundao67')"></i>
+                        <iframe src="apostilas/geometria-espacial/" class="tela"></iframe>
+
+                    </div>
+                    <a class="item">Paralelismo e perpendicularismo no espaço</a>
+                    <a class="item">Projeção ortogonal</a>
+                    <a class="item">Distâncias</a>
+                    <a class="item">Poliedros</a>
+                    <a class="item">Relação de Euler</a>
+                    <a class="item">Prismas</a>
+                    <a class="item">Princípio de Cavalieri</a>
+                    <a class="item">Pirâmides</a>
+                    <a class="item">Cilindros</a>
+                    <a class="item">Cones</a>
+                    <a class="item">Esferas</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Matrizes<i class="fas fa-equals"></i></h3>
+                <ul>
+                    <a href="#" class="item">Definição e tipos de matrizes</a>
+                    <a href="#" class="item">Adição e subtração de matrizes</a>
+                    <a href="#" class="item">Multiplicação de um número real por uma matriz</a>
+                    <a href="#" class="item">Matriz transposta</a>
+                    <a href="#" class="item">Multiplicação de matrizes</a>
+                    <a href="#" class="item">Matriz inversa</a>
+                    <a href="#" class="item">Determinante de uma matriz</a>
+                    <a href="#" class="item">Aplicações de matrizes</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Sistemas Lineares<i class="fas fa-percentage"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao87')">Equações lineares</a>
+                    <div class="fundo" id="fundao87">
+                        <i class="fas fa-times" onclick="fecha('fundao87')"></i>
+                        <iframe src="apostilas/sistemas-lineares/sistema-equacoes-lineares.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item">Sistemas de equações lineares</a>
+                    <a class="item">Sistemas lineares equivalentes</a>
+                    <a class="item">Sistemas lineares 2 X 2</a>
+                    <a class="item">Sistemas lineares 3 X 3</a>
+                    <a class="item" onclick="mostra('fundao92')">Escalonamento de sistemas lineares</a>
+                    <div class="fundo" id="fundao92">
+                        <i class="fas fa-times" onclick="fecha('fundao92')"></i>
+                        <iframe src="apostilas/sistemas-lineares/escalonamento.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item">Regra de Cramer</a>
+                    <a class="item">Sistemas lineares homogêneos</a>
+                </ul>
+            </div>
+        </section>
+        <!-- FINAL DA SESSÃO DO SEGUNDO ANO-->
+    </article>
+
+    <article id="secao3">
+        <h1 class="series">3° Ano</h1>
+        <button class="btn">Clique</button>
+        <section class="conteudo" hidden>
+            <div class="zebra">
+
+                <h3>Polinômios<i class="fas fa-square-root-alt"></i></h3>
+                <ul>
+                    <a href="#" class="item">Função polinomial</a>
+                    <a href="#" class="item">Valor numérico de um polinômio</a>
+                    <a href="#" class="item">Igualdade de polinômios</a>
+                    <a href="#" class="item">Raiz de um polinômio</a>
+                    <a href="#" class="item">Operações com polinômios</a>
+                    <a href="#" class="item">Equações polinomiais (ou algébricas)</a>
+                    <a href="#" class="item">Teorema fundamental da álgebra</a>
+                    <a href="#" class="item">Decomposição de fatores de 1 grau</a>
+                    <a href="#" class="item">Relações de Girard</a>
+                    <a href="#" class="item">Pesquisa de raízes racionais de uma equação algébrica de coeficientes reais</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Números Complexos<i class="fas fa-superscript"></i></h3>
+                <ul>
+                    <a href="#" class="item">Conjunto dos números complexos</a>
+                    <a href="#" class="item">Operações com números complexos</a>
+                    <a href="#" class="item">Representação geométrica dos números complexos</a>
+                    <a href="#" class="item">Módulo de um número complexo</a>
+                    <a href="#" class="item">Forma trigonométrica dos números complexos</a>
+                    <a href="#" class="item">Equações binômias e trinômias</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Geometria Analítica<i class="fas fa-percentage"></i></h3>
+                <ul>
+                    <a class="item" onclick="mostra('fundao111')">Estudo do Ponto</a>
+                    <div class="fundo" id="fundao111">
+                        <i class="fas fa-times" onclick="fecha('fundao111')"></i>
+                        <iframe src="apostilas/geometria-analitica/estudo-do-ponto.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao112')">Distância entre dois pontos</a>
+                    <div class="fundo" id="fundao112">
+                        <i class="fas fa-times" onclick="fecha('fundao112')"></i>
+                        <iframe src="apostilas/geometria-analitica/distancia-entre-dois-pontos.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao113')">Ponto médio de um segmento de reta</a>
+                    <div class="fundo" id="fundao113">
+                        <i class="fas fa-times" onclick="fecha('fundao113')"></i>
+                        <iframe src="apostilas/geometria-analitica/" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao114')">Condição de alinhamento de três pontos</a>
+                    <div class="fundo" id="fundao114">
+                        <i class="fas fa-times" onclick="fecha('fundao114')"></i>
+                        <iframe src="apostilas/geometria-analitica/condicao-tres-pontos.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao115')">Estudo da Reta</a>
+                    <div class="fundo" id="fundao115">
+                        <i class="fas fa-times" onclick="fecha('fundao115')"></i>
+                        <iframe src="apostilas/geometria-analitica/estudo-de-reta.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao116')">Inclinação de uma reta</a>
+                    <div class="fundo" id="fundao116">
+                        <i class="fas fa-times" onclick="fecha('fundao116')"></i>
+                        <iframe src="apostilas/geometria-analitica/inclina%C3%A7%C3%A3o-de-uma-reta.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao117')">Coeficiente angular de uma reta</a>
+                    <div class="fundo" id="fundao117">
+                        <i class="fas fa-times" onclick="fecha('fundao117')"></i>
+                        <iframe src="apostilas/geometria-analitica/coeficiente-angular-reta.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao118')">Equação fundamental da reta</a>
+                    <div class="fundo" id="fundao118">
+                        <i class="fas fa-times" onclick="fecha('fundao118')"></i>
+                        <iframe src="apostilas/geometria-analitica/equa%C3%A7%C3%A3o-fundamental-da-reta.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao119')">Posições relativas de duas retas no plano</a>
+                    <div class="fundo" id="fundao119">
+                        <i class="fas fa-times" onclick="fecha('fundao119')"></i>
+                        <iframe src="apostilas/geometria-analitica/" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao120')">Distância de um ponto a uma reta</a>
+                    <div class="fundo" id="fundao120">
+                        <i class="fas fa-times" onclick="fecha('fundao120')"></i>
+                        <iframe src="apostilas/geometria-analitica/distancia-ponto-reta.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao121')">Área de uma região triângular</a>
+                    <div class="fundo" id="fundao121">
+                        <i class="fas fa-times" onclick="fecha('fundao121')"></i>
+                        <iframe src="apostilas/geometria-analitica/area-de-uma-regiao-triangular.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao122')">Estudo da Circunferência</a>
+                    <div class="fundo" id="fundao122">
+                        <i class="fas fa-times" onclick="fecha('fundao122')"></i>
+                        <iframe src="apostilas/geometria-analitica/estudo-de-circunferencia.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao123')">Estudo das Cônicas</a>
+                    <div class="fundo" id="fundao123">
+                        <i class="fas fa-times" onclick="fecha('fundao123')"></i>
+                        <iframe src="apostilas/geometria-analitica/conicas.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao124')">Parábola</a>
+                    <div class="fundo" id="fundao124">
+                        <i class="fas fa-times" onclick="fecha('fundao124')"></i>
+                        <iframe src="apostilas/geometria-analitica/parabola.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao125')">Elipse</a>
+                    <div class="fundo" id="fundao125">
+                        <i class="fas fa-times" onclick="fecha('fundao125')"></i>
+                        <iframe src="apostilas/geometria-analitica/elipse.pdf" class="tela"></iframe>
+
+                    </div>
+                    <a class="item" onclick="mostra('fundao126')">Hipérbole</a>
+                    <div class="fundo" id="fundao126">
+                        <i class="fas fa-times" onclick="fecha('fundao126')"></i>
+                        <iframe src="apostilas/geometria-analitica/hiperbole.pdf" class="tela"></iframe>
+
+                    </div>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Estatística<i class="fas fa-greater-than-equal"></i></h3>
+                <ul>
+                    <a href="#" class="item">Variáveis estatísticas</a>
+                    <a href="#" class="item">Distribuição de Frequência</a>
+                    <a href="#" class="item">Tabelas e gráficos estatísticos</a>
+                    <a href="#" class="item">Medidas de tendência central</a>
+                    <a href="#" class="item">Média</a>
+                    <a href="#" class="item">Mediana</a>
+                    <a href="#" class="item">Moda</a>
+                    <a href="#" class="item">Medidas de dispersão</a>
+                    <a href="#" class="item">Variância</a>
+                    <a href="#" class="item">Desvio-padrão</a>
+                </ul>
+            </div>
+
+            <div class="zebra">
+                <h3>Nocões de Derivada<i class="fas fa-infinity"></i></h3>
+                <ul>
+                    <a href="#" class="item">Princípio de indução finita</a>
+                    <a href="#" class="item">Incremento de uma função</a>
+                    <a href="#" class="item">Razão entre incrementos</a>
+                    <a href="#" class="item">Limite</a>
+                    <a href="#" class="item">Derivada</a>
+                </ul>
+            </div>
+        </section>
+        <!-- FINAL DA SESSÃO DO TERCEIRO ANO-->
+    </article>
+
+
+
+
+    <footer>
+        <h4>&copy;MateTeam, Todos os direitos reservados</h4>
+    </footer>
+
+
+    <script src="js/novo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+﻿/*PRINCIPAL*/
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/banner-matemedio.png);
+}
+
+.imagemFalsa {
+    height: 95px;
+}
+
+#principal {
+    padding: 30px;
+}
+
+#banner {
+    height: 300px;
+    padding: 40px;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+#banner h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#banner p {
+    font-size: 18px;
+}
+
+
+.quadrado h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quadrado p {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.imagens {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-grow: 1;
+
+}
+
+.quadrado {
+    color: #4d4d4d;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    background: rgba(250, 250, 250, .85);
+    margin: 0 10px;
+}
+
+.conceito {
+    height: 440px;
+    color: #FA2805;
+    padding: 20px;
+}
+
+.conceito h1 {
+    position: relative;
+    top: -70px;
+    text-align: center;
+    font-family: 'Lobster', "Trebuchet MS", sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    width: 620px;
+    margin: 10px auto;
+    background: rgba(45, 45, 45, .8);
+    z-index: 0;
+}
+
+.img1 {
+    background-image: url(../img/conteudo3.jpg);
+}
+
+.img2 {
+    background-image: url(../img/conteudo15.jpeg);
+}
+
+.nivel {
+    border: 2px solid;
+    font-family: 'Game', sans-serif;
+    font-size: 68px;
+    margin-top: 10px;
+    display: block;
+    color: #000;
+}
+
+.sub {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+}
+
+i {
+    color: #000;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.nivel:hover {
+    color: #f00;
+    cursor: default;
+    transition: .1s
+}
+
+@media screen and (max-width: 1024px) {
+    #principal {
+        padding: 15px;
+    }
+
+    #banner h1 {
+        font-size: 3em;
+        max-height: 100%;
+    }
+
+    #banner p {
+        font-size: 18px;
+    }
+
+    .quadrado {
+        padding: 10px;
+    }
+
+    .teste {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #banner h1 {
+        font-size: 2.5em;
+        max-height: 100%;
+    }
+
+    #banner p {
+        font-size: 16px;
+    }
+
+    .quadrado {
+        padding: 5px;
+    }
+
+    .nivel {
+        font-size: 50px
+    }
+
+    .nivel i {
+        font-size: 20px;
+    }
+
+    .teste {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner h1 {
+        font-size: 2em;
+        max-height: 100%;
+    }
+
+    .nivel {
+        font-size: 50px;
+    }
+
+    .nivel i {
+        font-size: 20px
+    }
+
+    .teste {
+        background: none;
+    }
+
+    img.logo {
+        width: 100px;
+        position: absolute;
+        top: 5px;
+        left: 70px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    #banner {
+        padding: 10px;
+        max-height: 100%;
+        background: 0;
+    }
+
+    img.logo {
+        width: 50px;
+        position: absolute;
+        top: 1px;
+        left: 50px;
+    }
+
+    .conceito h1 {
+        top: -35px;
+        font-size: 28px;
+        width: 420px;
+    }
+
+    .sub {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    hgroup {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .teste {
+        padding: 20px 0;
+        margin-top: -20px;
+    }
+
+    .solo {
+        padding: 0;
+        margin-bottom: 200px;
+    }
+
+    .quadrado {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:458px) {
+    img.logo {
+        display: none;
+    }
+
+    #banner {
+        padding: 0;
+        background: 0;
+    }
+
+    #banner > p {
+        font-size: 15px
+    }
+
+    .conceito h1 {
+        top: 0;
+        margin: 10px auto;
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .solo {
+        margin-bottom: 150px;
+    }
+
+    .conceito h1 > p {
+        font-size: 18px;
+    }
+
+    .quadrado {
+        margin-bottom: 5px;
+    }
+}

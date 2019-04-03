@@ -1,0 +1,196 @@
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/banner-diversos-filmoteca.png);
+}
+
+.imagemFalsa {
+    height: 95px
+}
+
+body {
+    background: #f2f2f2
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 1100px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+figure {
+    display: flex;
+    width: 950px;
+    border-bottom: 4px solid #266380;
+    padding: 30px 50px;
+    margin: 0 auto;
+}
+
+figure img {
+    box-shadow: 1px 2px 20px 1px #ccc;
+    width: 215px;
+    height: 290px;
+
+}
+
+figure figcaption {
+    float: right;
+    width: 450px;
+    margin: 0 0 0 120px;
+}
+
+figcaption h2 {
+    margin: 10px 0;
+    padding: 5px;
+    color: #266380;
+}
+
+figcaption .sinopse {
+    margin: 10px 0;
+    padding: 5px;
+
+}
+
+figcaption .spec-conjunto {
+    margin: 5px 0;
+    padding: 1px;
+    font-size: 14px
+}
+
+figcaption .specs {
+    color: #a9a9a9;
+}
+
+#lista {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#lista li a {
+    padding: 10px;
+    color: #000;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+#lista li a:hover,
+a:focus {
+    color: #f07455;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1024px) {
+    article {
+        max-width: 950px;
+
+    }
+
+    figure {
+        width: 850px;
+    }
+
+    figure img {
+        width: 200px;
+        height: 250px;
+    }
+
+    figure figcaption {
+        font-size: 15px;
+        margin: 0 0 0 120px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    article {
+        max-width: 720px;
+    }
+
+    figure {
+        max-width: 600px;
+        padding: 10px;
+    }
+
+    figure img {
+        width: 120px;
+        height: 180px;
+    }
+
+    figcaption h2 {
+        margin: 0;
+        padding: 0;
+        color: #266380;
+    }
+
+    figure figcaption {
+        font-size: 14px;
+        margin: 0 0 0 10px;
+    }
+
+    figcaption .spec-conjunto {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    article {
+        max-width: 520px;
+    }
+
+    figure {
+        padding: 10px;
+        width: 490px;
+    }
+
+    figure img {
+        display: none;
+    }
+
+    figure figcaption {
+        font-size: 12px;
+        float: none;
+        margin-left: 30px;
+
+    }
+
+    figcaption .spec-conjunto {
+        font-size: 10px;
+    }
+
+    figcaption h2 {
+        margin: 5px 0 0 0;
+        padding: 0;
+        color: #266380;
+    }
+
+}
+
+@media screen and (max-width:458px) {
+    figure img {
+        display: none;
+    }
+
+    article {
+        max-width: 400px;
+    }
+
+    figure {
+        width: 390px;
+        padding: 0;
+        margin: 0;
+    }
+
+    figure figcaption {
+        width: 290px;
+        font-size: 12px;
+        float: none;
+    }
+
+}

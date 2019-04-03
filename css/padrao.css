@@ -1,0 +1,136 @@
+/*RESET*/
+@font-face {
+    font-family: 'Alpaca';
+    src: url(../fontes/usavel/alpaca.ttf);
+}
+
+@font-face {
+    font-family: 'Caviar';
+    src: url(../fontes/usavel/caviar_dreams.ttf);
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(../fontes/usavel/lobster.ttf);
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url(../fontes/usavel/sketch.woff);
+}
+
+@font-face {
+    font-family: 'Game';
+    src: url(../fontes/usavel/game.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Caviar, "Trebuchet MS", Arial, sans-serif;
+}
+
+p,
+li,
+a {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Alpaca;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*CABECALHO*/
+
+.container .imagemFalsa {
+    background-image: url(../img/banner-principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header h1 {
+    font-size: 5em;
+    text-align: center;
+    padding: 10px;
+}
+
+/*MENU*/
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 150px;
+}
+
+
+#menu{
+    background: #51b8fa;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    display: inline-block;
+    
+}
+
+ul li a {
+    font-size: 1.1em;
+    padding: 15px;
+    display: block;
+    color: #4d4d4d;
+}
+ul li:hover{
+    background: #f2f2f2;
+}
+ul ul{
+    position: absolute;
+    min-width: 100px;
+    background: #51b8fa;
+    visibility: hidden;
+}
+ul ul li{
+    display: block;
+   
+}
+ul li:hover ul{
+    visibility: visible;
+}
+ul li a:hover{
+    color:#f07455;
+}
+.desligado {
+    pointer-events: none;
+}
+/*RODAPÉ*/
+footer {
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+    background: #000;
+    color: #fff;
+}
