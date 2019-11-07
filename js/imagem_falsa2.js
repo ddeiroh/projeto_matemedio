@@ -20,5 +20,3 @@ function trocarClasse() {
         obj.className = outra;
      }
   }
-
-  </script>

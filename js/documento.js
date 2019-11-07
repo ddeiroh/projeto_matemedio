@@ -14,8 +14,3 @@ function clicarFora(e){
         fundo.style.display = 'none';
     }
 }
-
-
-
-
- 
